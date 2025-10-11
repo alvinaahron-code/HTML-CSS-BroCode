@@ -10,7 +10,11 @@ public class Main {
         // We can reuse a class to instantiate multiple instances of class
         // Meaning we can use the Car class to create multiple objects
         Car myCar1 = new Car(); 
-        Car myCar2 = new Car(); // Another Object
+        Car myCar2 = new Car(); 
+        // Car = Class
+        // myCar = Object name
+        // newCar() = calls the constructor
+        // Car.java = constructor
 
         
     
