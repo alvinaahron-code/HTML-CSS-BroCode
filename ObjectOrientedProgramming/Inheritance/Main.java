@@ -6,6 +6,7 @@ public class Main {
         // Inheritance = One class inherits the attributes and methods from another class
         // Child <- Parent <- Grandparent
         // Child inherits from Parent, Parent inherits from Grandparent
+        // Child (Dog & Sheep), Parent (Animal), Grandparent (Organism)
 
         Dog dog = new Dog();
         Sheep sheep = new Sheep();
