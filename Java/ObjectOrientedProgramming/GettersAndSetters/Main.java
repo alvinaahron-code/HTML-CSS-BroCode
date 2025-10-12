@@ -20,6 +20,8 @@ public class Main {
         System.out.println();
         smartphone.setColor("Black");
         smartphone.setYear(2022); // Check validation in Smartphone.java
+        // 2022 prompted the if-else validation
+        // It returned this.year = year; from getYear() { return this.year; }
 
         // Using getters
         System.out.println("\n========== GETTERS & SETTERS ==========");
