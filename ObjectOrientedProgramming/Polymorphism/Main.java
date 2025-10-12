@@ -13,7 +13,9 @@ public class Main {
         Bike bike = new Bike();
         Boat boat = new Boat();
 
-        Vehicle[] vehicles = {car, boat, bike};
+        Vehicle[] vehicles = {car, boat, bike}; 
+        // This worked because all class (car, boat, bike) is a child class of Vehicle so they are related
+        // Boat[] boats = {car, boat, bike} won't work
 
         System.out.println("\n===== VEHICLE CLASS =====");
 
