@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- 
+     action="index.php" is outside the learning scope
+     method="POST" are for confidential information (e.g. username & password)
+     method="GET" are for insensitive data
+     -->
+
+    <form action="index.php" method="POST">
+
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Username" id="username" minlength="6" maxlength="15" required>
+        
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8" maxlength="12" required>
+
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="TestUser@gmail.com" id="email">
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="0000-000-0000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+
+        <br><br>
+
+        <label for="birthday">Birthdate:</label>
+        <input type="date" id="birthday">
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
