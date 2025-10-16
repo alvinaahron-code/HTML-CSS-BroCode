@@ -12,9 +12,13 @@
      action="index.php" is outside the learning scope
      method="POST" are for confidential information (e.g. username & password)
      method="GET" are for insensitive data
-     -->
+    -->
 
-    <form action="index.php" method="POST">
+    <!-- If sending a large file such as image, it is recommended to add encryption type
+      enctype="" basically it breaks down large amounts of data into parts and reassembles it
+    -->
+
+    <form action="index.php" method="POST" enctype="multipart/form-data">
 
         <label for="username">Username:</label>
         <input type="text" placeholder="Username" id="username" minlength="6" maxlength="15" required>
@@ -39,6 +43,58 @@
         <label for="birthday">Birthdate:</label>
         <input type="date" id="birthday">
 
+        <br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"> <!-- value="1" means that it starts with 1-->
+
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        
+        <input type="radio" id="Male" value="Male" name="title"> <!-- value adds value when the form is submitted-->
+        <label for="Male">Male</label>
+
+        <input type="radio" id="Female" value="Female" name="title"> <!-- Value of female is female-->
+        <label for="Female">Female</label>
+
+        <input type="radio" id="Rather not say" value="Rather not say" name="title">
+        <label for="Rather not say">Rather not say</label>
+
+        <br><br>
+
+        <label for="payment">Payment:</label>
+
+        <select id="payment"> <!-- <select> tags are for dropdown and inside it are the options-->
+
+            <option value="Visa">Visa</option>
+            <option value="Giftcard">Giftcard</option>
+            <option value="Mastercard">Mastercard</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" id="subscribe">
+
+        <br><br>
+
+        <label for="comment">Comment:</label>
+        
+        <br>
+
+        <textarea id="comment" rows="3" cols="25"></textarea>
+
+        <br><br>
+
+        <label for="file">File:</label>
+
+        <!-- Default accepts all file to limit accepted files use accept=""-->
+        <input type="file" id="file" accept="image/png, image/jpeg"> 
+
+        <br><br>
+        
         <input type="reset">
         <input type="submit">
     </form>
