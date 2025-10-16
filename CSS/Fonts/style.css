@@ -1,0 +1,34 @@
+@font-face {
+    src: url(fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+    font-family: Alumni;
+}
+
+@font-face {
+    src: url(fonts/Allan/Allan-Regular.ttf);
+    font-family: Allan;
+}
+
+@font-face {
+    font-family: LuckiestGuy;
+    src: url(fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#Allan {
+    font-family: Allan;
+    font-size: 25px;
+}
+
+#LuckiestGuy {
+    font-family: LuckiestGuy;
+    font-size: 30px;
+}
