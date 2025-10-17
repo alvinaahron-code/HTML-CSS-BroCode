@@ -1,0 +1,58 @@
+#box1 {
+    border: 2px solid;
+    background-color: hsl(240, 90%, 64%);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+}
+
+#box2 {
+    border: 2px solid;
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Where box1 is box3 follows since it is absoulte */
+#box3 {
+    width: 100px;
+    height: 100px;
+    background-color: cornsilk;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* Cannot be moved up to the most right need to change it to fixed or margin-left: auto*/
+/* Works almost the same as fixed*/
+#box4 {
+    border: 2px solid;
+    background-color: hsl(71, 90%, 64%);
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    top: 0px;
+}
+
+/* Set a position to default = static */
+#box5 {
+    border: 2px solid;
+    background-color: hsl(107, 90%, 64%);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+}
+
+#box6 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(220, 249, 255);
+    position: static;
+    top: 50px;
+    left: 50px;
+}
