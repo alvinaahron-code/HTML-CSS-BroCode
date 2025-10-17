@@ -1,0 +1,23 @@
+/* height 100px means that all the paragraph won't fit so some are overflowing or going outside the border
+overflow: hidden = texts outside the border will be hidden but can still be interacted (highlighted)
+
+overflow: visible = texts outside the border are visible
+
+overflow: clip  = same as hidden but also uses overflow-clip-margin (e.g. 10px) shows the text that are included up 
+until 10px 
+
+overflow: scroll = adds a scroll bar into the border to see the entire text
+
+overflow: auto = won't add a scroll bar until necessary (long texts)*/
+
+
+
+div {
+    border: 5px solid;
+    height: 100px; 
+    overflow: scroll;
+}
+
+p {
+    font-size: 30px;
+}
