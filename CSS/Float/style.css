@@ -1,0 +1,28 @@
+/* Without display: flow-root; the image would overlap from the border, to fix use
+display: flow-root;
+Anything that's floating or has float property will stay inside the container or border*/
+
+body {
+    border: 5px solid hsl(0, 84%, 52%);
+    display: flow-root;
+}
+
+#img1 {
+    height: 250px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#img2 {
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+p {
+    font-size: 25px;
+}
