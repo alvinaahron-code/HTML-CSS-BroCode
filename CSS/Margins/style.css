@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+
+.box {
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 75px;
+}
+
+/* You can apply margin to all sides evenly using margin: 50px (50px all sides: top, left, right, bottom) */
+/* 
+margin-left: auto; it will take up all the space on the left side of the box, the box will stay on the right 
+side. 
+
+Same goes for margin-right: auto; it will stay on the left side since it's taking all the margin on the right*/
+
+#box1 {
+    background-color: rgb(0, 98, 255);
+    margin: 50px;
+}
+
+#box2 {
+    background-color: coral;
+    margin: auto; /* To center the box */
+}
+
+#box3 {
+    background-color: hotpink;
+    margin-left: auto;
+}
+
+#box4 {
+    background-color:peru;
+    margin: auto;
+}
+
+#box5 {
+    background-color: crimson;
+    margin: 50px;
+}
